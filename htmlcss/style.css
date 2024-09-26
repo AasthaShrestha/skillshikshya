@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem auto;
+  border: 1px solid black;
+}
+.box::after {
+  content: "hi";
+  font-size: 2rem;
+}
+.text {
+  padding: 1rem;
+  background-color: yellow;
+}
+
+div.text1 {
+  letter-spacing: 20px;
+}
+.one {
+  color: red;
+}
+#two {
+  background-color: blue;
+  border: 2px solid brown;
+}
+a:link {
+  margin-top: 4rem;
+  text-decoration: none;
+  color: brown;
+  background-color: aqua;
+  padding: 2rem;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+a:active {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.parent {
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+  background-color: gray;
+  margin: 200px 20px;
+}
+.child {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: blue;
+  top: 100px;
+  /* left: 100px; */
+  right: -20px;
+}
+.child:nth-child(2) {
+  top: 150px;
+}
+
+.child:nth-child(3) {
+  bottom: 100px;
+  /* bottom: 100px; */
+  right: 250px;
+  background-color: bisque;
+}
+.child:nth-child(9) {
+  bottom: 100px;
+  /* bottom: 100px; */
+  right: 100px;
+  background-color: bisque;
+}
+
+.child:nth-child(4) {
+  top: 250px;
+  left: 100px;
+  background-color: black;
+}
+.child:nth-child(5) {
+  top: 250px;
+  left: 140px;
+  background-color: black;
+}
+.child:nth-child(6) {
+  top: 250px;
+  left: 180px;
+  background-color: black;
+}
+.child:nth-child(7) {
+  top: 250px;
+  left: 220px;
+
+  background-color: black;
+}
+.child:nth-child(8) {
+  top: 250px;
+  left: 260px;
+  background-color: black;
+}
+
+span {
+  margin: 100px;
+}
+
+.flex-parent {
+  width: 100%;
+  margin: 200px 0;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  height: 50vh;
+  align-items: center;
+}
+.flex {
+  height: 50px;
+  width: 50px;
+}
+.flex-green {
+  background-color: green;
+}
+.flex-red {
+  background-color: red;
+}
+.flex-yellow {
+  background-color: yellow;
+}
+.flex-black {
+  background-color: black;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 200px 100px;
+  height: 80vh;
+  gap: 10px;
+  justify-content: center;
+}
